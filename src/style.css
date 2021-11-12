@@ -1,0 +1,100 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkcyan: hsl(185, 75%, 39%);
+  --darkdesaturatedblue: hsl(229, 23%, 23%);
+  --darkgrayishblue: hsl(227, 10%, 46%);
+  --darkgray: hsl(0, 0%, 59%);
+}
+
+body {
+  background-image: url(../src/images/bg-pattern-top.svg),
+    url(../src/images/bg-pattern-bottom.svg);
+  background-position: -50% 50%, 130% -40%;
+  /* background-position: -200px -500px, 750px 400px; */
+  background-repeat: no-repeat, no-repeat;
+  background-color: var(--darkcyan);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  width: 350px;
+  height: 45%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../src/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 4px -2px rgba(0, 0, 0, 0.4);
+}
+
+.data {
+  margin-top: 60px;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 0;
+}
+
+img {
+  border-radius: 50%;
+  border: solid 5px white;
+  padding: 0%;
+}
+
+.name {
+  display: inline;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--darkdesaturatedblue);
+}
+.age {
+  display: inline;
+  color: var(--darkgrayishblue);
+}
+
+.city {
+  text-align: center;
+  color: var(--darkgrayishblue);
+  font-size: 15px;
+}
+
+.stats {
+  width: 350px;
+  border-top: solid 1px rgba(150, 150, 150, 0.4);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 15px;
+  padding-top: 25px;
+}
+
+.stat {
+  color: var(--darkgray);
+  font-size: 14px;
+}
+
+.stat h3 {
+  color: var(--darkdesaturatedblue);
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url(../src/images/bg-pattern-top.svg),
+      url(../src/images/bg-pattern-bottom.svg);
+    background-position: -600px -500px, 300px 400px;
+    background-repeat: no-repeat, no-repeat;
+    background-color: var(--darkcyan);
+    font-family: "Kumbh Sans", sans-serif;
+  }
+}
